@@ -44,7 +44,7 @@ export const fetchCharacters = async (page: number = 1) => {
       const species = await getSpeciesName(character.species);
       const image = await getStarWarsImageFromAllJson(character.name);
       return {
-        id: character.url.split('/').filter(Boolean).pop(),
+        id: Number(character.url.split('/').filter(Boolean).pop()),
         name: character.name,
         image,
         status: 'unknown',
@@ -70,7 +70,7 @@ export const fetchCharacterById = async (id: string) => {
   const species = await getSpeciesName(data.species);
   const image = await getStarWarsImageFromAllJson(data.name);
   return {
-    id,
+    id: Number(id),
     name: data.name,
     image,
     status: 'unknown',
