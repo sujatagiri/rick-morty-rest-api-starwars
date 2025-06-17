@@ -15,11 +15,6 @@ const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/',
   component: CharacterList,
-  // searchSchema: z.object({
-  //   page: z
-  //     .preprocess((v) => (typeof v === 'string' ? v : '1'), z.string())
-  //     .default('1'),
-  // }),
 });
 
 const characterRoute = createRoute({

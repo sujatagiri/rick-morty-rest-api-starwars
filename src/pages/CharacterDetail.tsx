@@ -40,26 +40,26 @@ export default function CharacterDetail() {
       <div className={styles.card}>
         <img
           className={styles.image}
-          src={data.image}
-          alt={data.name}
+          src={data?.image}
+          alt={data?.name}
         />
         <div className={styles.info}>
-          <h1 className={styles.name}>{data.name}</h1>
+          <h1 className={styles.name}>{data?.name}</h1>
           <div className={styles.field}>
             <span>Status:</span>
-            <span>{data.status}</span>
+            <span>{data?.status}</span>
           </div>
           <div className={styles.field}>
             <span>Species:</span>
-            <span>{data.species}</span>
+            <span>{data?.species}</span>
           </div>
           <div className={styles.field}>
             <span>Gender:</span>
-            <span>{data.gender}</span>
+            <span>{data?.gender}</span>
           </div>
           <div className={styles.field}>
             <span>Origin:</span>
-            <span>{data.origin?.name}</span>
+            <span>{data?.origin?.name}</span>
           </div>
           <button
             className={styles.backButton}
