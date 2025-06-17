@@ -1,5 +1,7 @@
 # React + TypeScript + Vite
 
+Open https://rick-morty-rest-api-starwars-x7ta.vercel.app/ for demo
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
